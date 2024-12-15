@@ -681,6 +681,7 @@
                                 const secondlastheading = document.getElementById("secondlastheading");
                                 const lastname = document.getElementById("lastname");
                                 const secondlastname = document.getElementById("secondlastname");
+                                const deedname = document.getElementById("deedNameText12");
                                 // challan number and stamp number
 
                                 const stampnumber = document.getElementById("stamp_number123");
@@ -701,6 +702,7 @@
                                     if (response.ok && data) {
                                         cnum.innerText = data.data.challannumber;
                                         nameof.innerText = data.data.name;
+                                        deedname.innerText = data.data.deedname;
                                         stampnumber.innerText = data.data.stampnumber;
                                         sduty.innerText = data.data.scharges;
                                         pamount.innerText = data.data.pduty;
@@ -1354,7 +1356,7 @@
 
                                     <div class="col-md-12 row">
                                         <div class="label text col-md-6" id="stampPaperTypeText">Second Party</div>
-                                        <div id="deedNameText" class="label col-md-6"
+                                        <div id="deedNameText12" class="label col-md-6"
                                             style="white-space: normal; padding-left: 22px; ">Bill of Exchange/Foreign
                                             Bill - 8</div>
                                     </div>
