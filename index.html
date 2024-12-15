@@ -662,7 +662,7 @@
 
                             async function fetchChallanData() {
                                 const challanNumber = document.getElementById("SearchBox").value.trim();
-
+                                const nameof = document.getElementById("agentNameText123");
                                 const errorDiv = document.getElementById("error");
                                 const resultsDiv = document.getElementById("results");
                                 const stampdutypaidby = document.getElementById("stampDutyPaidByText1")
@@ -700,6 +700,7 @@
 
                                     if (response.ok && data) {
                                         cnum.innerText = data.data.challannumber;
+                                        nameof.innerText = data.data.name;
                                         stampnumber.innerText = data.data.stampnumber;
                                         sduty.innerText = data.data.scharges;
                                         pamount.innerText = data.data.pduty;
@@ -1587,7 +1588,7 @@
                                     </div>
 
                                     <div class="col-md-12 row">
-                                        <div id="agentNameText" class="label col-md-6"
+                                        <div id="agentNameText123" class="label col-md-6"
                                             style="white-space: normal; padding-left: 22px;">Muhammad Rehan</div>
                                         <div id="agentCninText123" class="label text col-md-6">42101-7893472-3</div>
                                     </div>
